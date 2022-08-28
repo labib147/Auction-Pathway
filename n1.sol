@@ -17,13 +17,17 @@ contract Auction{
     //bidding
 
     function bidNow() public payable {
-        if 
-        require(bidders[bidders.length - 1] == msg.sender, "Sorry you are the last bidder");
+        if (bidders.length > 0){
+            require(bidders[bidders.length - 1] != msg.sender, "Sorry you are the last bidder");   
+        }
+        
         uint totalBid = biddersData[msg.sender] + msg.value;
         require(block.timestamp<endTime, "Auction ended");
         require(msg.value> 0, "Value has to be more than 0");
         require(msg.value> minBid, "Warning, Cannot bid lower than Minimum Limit");
         require(msg.value< maxBid, "Warning, Cannot bid higher than Maximum Limit");
+
+        //require(bidders[bidders.length - 1] == msg.sender, "Sorry you are the last bidder");
 
     // check highest bid
         require(totalBid>highestBid, "Cannot bid lower than highest bid");
@@ -33,6 +37,11 @@ contract Auction{
 
         bidders.push(msg.sender);
     }
+
+    // checking array values
+    function array()public view returns(address[] memory){
+    return bidders;
+}
     // get Contract balance (test)
 
     function getBiddersBid(address _address) public view returns(uint){
@@ -57,6 +66,7 @@ contract Auction{
 
     //withdraw bid
     function withdrawBid(address payable _address) public  {
+        //if (address = highestBidder){}
         if (biddersData[_address]>0){
             _address.transfer(biddersData[_address]);
         }
