@@ -36,8 +36,8 @@ To deploy in local network
 ```
 Start the frontend react app
 
-```
 hardhat.config.js file
+```
 
 require("@nomicfoundation/hardhat-toolbox");
 
