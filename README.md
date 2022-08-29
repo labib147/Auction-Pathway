@@ -40,6 +40,8 @@ Start the frontend react app
 ## Additional
 ```
 npm install 
+npm install hardhat
+npm i hardhat-console
 ```
 To install node packages incase any of them went missing
 
