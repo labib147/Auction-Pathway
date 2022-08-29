@@ -7,17 +7,12 @@ Local creation Commands:
 1. npx create-react-app react-dapp
 2. cd react-dapp/
 3. npm install ethers hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers
-
-
 ```
 
-1. Ethers - To interact with Smart Contract from Frontend.
-2. Hardhat - Hardhat is an Ethereum development environment. Compile your contracts and run them on a development network.
-Hardhat dependencies -
-a. hardhat-waffle
-b. ethereum-waffle 
-c. hardhat-ethers
-3. Chai - For testing
+i. Ethers - To interact with Smart Contract from Frontend.</br>
+ii. Hardhat - Hardhat is an Ethereum development environment. Compile your contracts and run them on a development network.</br>
+Hardhat dependencies - hardhat-waffle, ethereum-waffle, hardhat-ethers </br>
+iii. Chai - For testing</br>
 
 ```
 4. npx hardhat
@@ -32,7 +27,7 @@ To compile all the solidity files
 
 
 ```
-hardhat.config.js
+hardhat.config.js file
 
 require("@nomicfoundation/hardhat-toolbox");
 
