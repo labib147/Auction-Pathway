@@ -37,6 +37,12 @@ To deploy in local network
 ```
 Start the frontend react app
 
+## Additional
+```
+npm install 
+```
+To install node packages incase any of them went missing
+
 hardhat.config.js file
 ```
 
