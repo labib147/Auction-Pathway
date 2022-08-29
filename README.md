@@ -31,7 +31,10 @@ To run local test network giving us multiple accounts to transact
 7. npx hardhat run scripts/deploy.js --network localhost
 ```
 To deploy in local network
-
+```
+8. npm start
+```
+Start the frontend react app
 
 ```
 hardhat.config.js file
