@@ -18,3 +18,8 @@ a. hardhat-waffle
 b. ethereum-waffle 
 c. hardhat-ethers
 3. Chai - For testing
+
+```
+4. npx hardhat
+```
+Initializes hardhat developement envioronment also creates a basic project with all the configurations we will need(You can choose between Js or Ts). Will also create a basic smart contract by default, creates hardhat.config.js / hardhat.config.ts
