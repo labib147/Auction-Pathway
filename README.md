@@ -23,3 +23,22 @@ c. hardhat-ethers
 4. npx hardhat
 ```
 Initializes hardhat developement envioronment also creates a basic project with all the configurations we will need(You can choose between Js or Ts)(Delete the default README.md file created before to solve the conflict). Will also create a basic smart contract by default, creates hardhat.config.js / hardhat.config.ts
+```
+5. npx hardhat compile    // To compile all the solidity files
+```
+
+
+
+hardhat.config.js
+
+require("@nomicfoundation/hardhat-toolbox");
+
+/** @type import('hardhat/config').HardhatUserConfig */
+module.exports = {
+  networks: {
+    hardhat: {
+      chainId: 1337,
+    },    
+  },
+  solidity: "0.8.9",
+};
