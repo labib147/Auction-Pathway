@@ -17,8 +17,9 @@ iii. Chai - For testing</br>
 ```
 4. npx hardhat
 ```
-Initializes hardhat developement envioronment also creates a basic project with all the configurations we will need(You can choose between Js or Ts) </br>
-(Delete the default README.md file created before to solve the conflict). Will also create a basic smart contract by default, creates hardhat.config.js / hardhat.config.ts
+Initializes hardhat developement envioronment also creates a basic project with all the configurations we will need </br>
+(You can choose between Js or Ts) (Delete the default README.md file created before to solve the conflict)</br> 
+Will also create a basic smart contract by default, creates hardhat.config.js / hardhat.config.ts
 ```
 5. npx hardhat compile    
 ```
