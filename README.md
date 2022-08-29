@@ -23,7 +23,10 @@ Initializes hardhat developement envioronment also creates a basic project with 
 5. npx hardhat compile    
 ```
 To compile all the solidity files
-
+```
+6. npx hardhat node
+```
+To run local test network giving us multiple accounts to transact
 
 
 ```
